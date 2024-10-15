@@ -1,0 +1,361 @@
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            padding-top:10px;
+            background: rgba(143,280,240);
+            background-size: 400% 400%;
+            animation: gradientBG 10s ease infinite;
+            color: #fff;
+            transition: all 0.3s ease;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        header, nav, section, footer {
+            transition: opacity 0.3s ease;
+        }
+
+        header {
+            margin:10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 40px 20px;
+            text-align: left;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        header h1 {
+            font-size: 4em;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.5em;
+            font-weight: 300;
+        }
+
+nav {
+    position: fixed; /* Fixes the navigation bar at the top */
+    top: 0; /* Positions it at the top */
+    width: 100%; /* Ensures it spans the full width */
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Keeps it above other content */
+}
+
+.intro {
+    margin-top: 80px; /* Adjust this value based on the height of your nav */
+}
+
+        nav a {
+            color: #fff;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 1.8em;
+            padding: 10px 20px;
+            border-radius: 30px;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        nav a:hover {
+
+            color: rgba(143,280,240);       
+        }
+
+.intro div, .services div, .projects div, .contact div {
+
+            padding: 0.5px  20px;
+            padding-bottom:15px ;
+            max-width: 1200px;
+            margin: 50px auto;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
+
+.intro div, .services div, .projects div, .contact div h2 {
+           font-size:20px;
+            color: #fff;
+            border-bottom: 2px solid #fff;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+.about {
+
+            padding: 0.5px  20px;
+            padding-bottom:15px ;
+            max-width: 1200px;
+            margin: 50px auto;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+     }
+
+h3{
+margin-top:30px;
+ border-bottom: 2px solid #fff;
+            padding-bottom: 10px;
+            margin-bottom: 30px;}
+
+        .intro img {
+            width: 100%;
+            max-width: 250px;
+            height: auto;
+            border-radius: 5px;
+            border: 8px solid rgba(143,280,240);
+            margin-bottom: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .intro img:hover {
+            transform: scale(1.05);
+        }
+
+        .about p,
+        .services ul,
+        .projects p {
+            font-size: 1.3em;
+            line-height: 1.6;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .services ul li {
+        }
+
+        .services ul li:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+	.projects li{
+		background:rgba(255,255,255,0.1);
+		padding:10px;
+		margin-bottom:15px;
+		border-left:5px solid #fff;
+	}
+        footer {
+            background-color:#000;
+            color: #fff;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 50px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1.2em;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #fff;
+            color: #000;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: background 0.3s ease, transform 0.3s;
+        }
+
+        .button:hover {
+            background-color: rgba(143,280,240);
+            transform: scale(1.0);
+        }
+
+        .projects img {
+            width: 100px;
+            height: 100px;
+            border-radius: 0;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .projects img:hover {
+            transform: scale(1.1);
+        }
+
+        .view-more {
+         color:White;   
+        }
+
+        .view-more:hover {
+            background-color: rgba(143,280,240);
+            transform: scale(1.1);
+        }
+
+      
+       .project-detail {
+             display: none;
+             background-color: rgba(0, 0, 0, 0.9);
+            padding: 20px;  
+            position: fixed; 
+            top: 20px;
+            left: 20px;
+            right: 20px;
+            bottom: 20px;
+            width: calc(100% - 40px);
+             height: calc(100% - 40px);
+	y-axis:auto; 
+            box-sizing: border-box;     
+            border-radius: 10px; 
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+}
+        .project-detail.active {
+            display: block;
+        }
+
+        .project-detail h3 {
+            margin-top: 0;
+        }
+
+        .hide-all {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5em;
+            }
+
+            header p {
+                font-size: 1.2em;
+            }
+
+            nav a {
+                font-size: 1em;
+            }
+        }
+
+.timeline-classic {
+	counter-reset: timeline-classic-item;
+	position: relative;
+	overflow: hidden;
+	text-align: left;
+	padding: 25px 0 25px 20px;
+}
+
+.timeline-classic-counter {
+	font-family: Poppins, sans-serif;
+	font-size: 24px;
+	color: #151515;
+}
+
+.timeline-classic-counter::before {
+	content: "Step " counter(timeline-classic-item, decimal-leading-zero) ". ";
+	counter-increment: timeline-classic-item;
+	color: #3061ff;
+}
+
+.timeline-classic-item {
+	position: relative;
+	padding-left: 29px;
+}
+
+.timeline-classic-item::before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translate3d(0, -50%, 0);
+	height: 300%;
+	border-left: 1px solid #ebebeb;
+}
+
+.timeline-classic-item:not(:last-child) .timeline-classic-item-inner {
+	padding-bottom: 30px;
+	border-bottom: 1px solid #ebebeb;
+}
+
+.timeline-classic-item-decoration {
+	position: absolute;
+	left: 0;
+	top: 20px;
+	z-index: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	pointer-events: none;
+}
+
+.timeline-classic-item-decoration::before, .timeline-classic-item-decoration::after {
+	content: '';
+	position: absolute;
+	border-radius: 50%;
+	background: #3061ff;
+}
+
+.timeline-classic-item-decoration::before {
+	width: 14px;
+	height: 14px;
+}
+
+.timeline-classic-item-decoration::after {
+	width: 26px;
+	height: 26px;
+	opacity: .3;
+}
+
+.ie-10 .timeline-classic-item-decoration::before, .ie-10 .timeline-classic-item-decoration::after,
+.ie-11 .timeline-classic-item-decoration::before,
+.ie-11 .timeline-classic-item-decoration::after {
+	top: 50%;
+	left: 50%;
+	transform: translate3d(-50%, -50%, 0);
+}
+
+.timeline-classic-title {
+	font-family: Poppins, sans-serif;
+	font-size: 16px;
+	line-height: 1.4;
+	color: #2f2f2f;
+}
+
+.timeline-classic-title span {
+	margin-right: .25em;
+}
+
+.timeline-classic-text {
+	color: #2f2f2f;
+}
+
+.timeline-classic-item-decoration + * {
+	margin-top: 0;
+}
+
+* + .timeline-classic-text {
+	margin-top: 10px;
+}
+
+.timeline-classic-item + .timeline-classic-item {
+	margin-top: 30px;
+}
+
+@media (min-width: 576px) {
+	.timeline-classic {
+		padding: 35px 0 50px 20px;
+	}
+	.timeline-classic-item {
+		padding-left: 50px;
+	}
+	.timeline-classic-title {
+		font-size: 18px;
+	}
+}
